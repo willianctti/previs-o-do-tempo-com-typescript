@@ -21,3 +21,25 @@ crtl + alt + N
 
 tsc p mandar para o JS
 tsc -w para refletir automaticamente no .js
+
+
+
+
+
+em geral, não mudou muita coisa da previsão do tempo 
+feita em JS puro. na função buttonClick() tive que 
+criar uma const cidadeInput para pegar o input e 
+usar o as HTMLInputElement para pegar o .value
+pois, por exemplo, o htmlelement nao daria a opção
+de usar o .value. Em seguida, fiz outra const 
+para pegar pegar o cidadeInput.
+
+
+
+já na função returnData, tive que usar if 
+ pois é preciso verificar se os elementos 
+foram encontrados pelo método, 
+antes de tentar acessar suas propriedades.
+
+
+deixei comentada a versão em JS apenas para comparar.

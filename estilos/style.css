@@ -4,17 +4,33 @@
 }
 
 body {
-    background: url(../images/natureza.jpg);
-    background-position: center top;
+    background: linear-gradient(45deg, rgb(167, 235, 222), rgb(13, 120, 144));
+    /* background-position: center top;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-size: 300%, 300%;
+    animation: colors 5s ease-in-out infinite;
+    
 }
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 section {
     width: 300px;
     min-height: 250px;
-    background-color: rgba(233, 127, 27, 0.553);
+    background-color: rgba(131, 181, 246, 0.588);
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(213, 117, 21, 0.311);
+    box-shadow: 5px 5px 10px rgba(213, 117, 21, 0.129);
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -89,4 +105,10 @@ p#umidade {
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 0px black;
+}
+
+#nuvempng {
+    width: 50px;
+    padding: 20px;
+    float: right;
 }

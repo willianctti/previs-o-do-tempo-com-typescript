@@ -20,13 +20,34 @@ function buscarCidade(cidade) {
         returnData(dados);
     });
 }
+/* function returnData(dados: any) {
+   const cidadeRes = document.getElementById('cidade') as HTMLElement;
+    cidadeRes.innerHTML = "Tempo em " + dados.name
+
+    const grausRes = document.querySelector('graus') as HTMLElement;
+    grausRes.innerHTML = Math.floor(dados.main.temp) +"°C"
+
+    const nuvensRes = document.querySelector('nuvens') as HTMLElement;
+    nuvensRes.innerHTML = dados.weather[0].description
+
+    const umidadeRes = document.querySelector('umidade') as HTMLElement;
+    umidadeRes.innerHTML = "Umidade " + dados.main.humidity + "%"
+} */
 function returnData(dados) {
-    const cidadeRes = document.getElementById('#cidade');
-    cidadeRes.innerHTML = "Tempo em " + dados.name;
+    const cidadeRes = document.getElementById('cidade');
+    if (cidadeRes) {
+        cidadeRes.innerHTML = "Tempo em " + dados.name;
+    }
     const grausRes = document.querySelector('#graus');
-    grausRes.innerHTML = Math.floor(dados.main.temp) + "°C";
+    if (grausRes) {
+        grausRes.innerHTML = Math.floor(dados.main.temp) + "°C";
+    }
     const nuvensRes = document.querySelector('#nuvens');
-    nuvensRes.innerHTML = dados.weather[0].description;
+    if (nuvensRes) {
+        nuvensRes.innerHTML = dados.weather[0].description;
+    }
     const umidadeRes = document.querySelector('#umidade');
-    umidadeRes.innerHTML = "Umidade " + dados.main.humidity + "%";
+    if (umidadeRes) {
+        umidadeRes.innerHTML = "Umidade " + dados.main.humidity + "%";
+    }
 }
