@@ -1,0 +1,23 @@
+primeiramente, insatalar o TS globalmente.
+npm install -g typescript
+
+tsc --init
+tsconfig.json
+
+Plugin Code-Runner
+
+
+Para n]ao precisar compilar antes de ver o resultado
+npm i --g ts-node
+
+
+tsc script.ts
+Pegou o codigo TS, compilou e jogou para um arquivo JS
+
+
+Rodei o Code Runner
+crtl + alt + N
+
+
+tsc p mandar para o JS
+tsc -w para refletir automaticamente no .js
